@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'officinaserifbookc';
+  src: url('../fonts/officinaserifbookc.eot');
+  src: url('../fonts/officinaserifbookc.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/officinaserifbookc.woff') format('woff'),
+  url('../fonts/officinaserifbookc.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto-Light.eot');
+  src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Roboto-Light.woff') format('woff'),
+  url('../fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+@mixin reg {
+  font-family: 'officinaserifbookc', sans-serif;
+  font-weight: 400;
+}
+@mixin roboto {
+  font-family: 'Roboto-Light', sans-serif;
+  font-weight: 300;
+}
+
+
+
+
+

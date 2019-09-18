@@ -1,0 +1,1227 @@
+
+*
+  box-sizing: border-box
+  +reg
+
+
+
+canvas.video
+  position: absolute
+  bottom: 0
+  right: 0
+  margin-right: -50%
+  -o-object-fit: cover
+  object-fit: cover
+  width: 780px
+  height: 412px
+  z-index: -1
+
+
+
+h1, h2, h3, h4, h5, h6, p, span
+  margin: 0
+
+.navbar-list__item
+  z-index: 1
+
+a
+  text-decoration: none
+
+
+.mobile
+  display: none
+
+.cross
+  display: none
+  
+.bar
+  transition: .5s
+  z-index: 99999999
+  position: fixed
+  right: 88px
+  top: 44%
+  transform: translateY(-50%)
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  &-step
+    cursor: pointer
+    width: 102px
+    height: 102px
+    margin-bottom: 8px
+    position: relative
+    &-step1
+      background: url(../img/step-1.svg) no-repeat center center
+    &-step2
+      background: url(../img/step-2.svg) no-repeat center center
+    &-step3
+      background: url(../img/step-3.svg) no-repeat center center
+    &-step4
+      background: url(../img/step-4.svg) no-repeat center center
+      margin-bottom: 0
+    &__circle
+      transform: translateY(-50%) translateX(50%)
+      top: 50%
+      right: 50%
+      transition: .3s
+      cursor: pointer
+      position: absolute
+      display: block
+      background: #FFFFFF
+      box-shadow: 6px 6px 32px rgba(0, 0, 0, 0.15)
+      width: 0
+      height: 0
+      z-index: -1
+      border-radius: 50%
+      &-active
+        width: 102px
+        height: 102px
+
+
+
+
+.disable
+  pointer-events: none
+
+
+.bar-active
+  top: 50%
+
+.dot
+  background: #5483A5
+  width: 1px
+  height: 8px
+  margin-bottom: 8px
+
+.fullpage
+  display: block
+  height: 5162px
+  margin: 0 auto
+  position: relative
+  &-scroll
+    background: #ffffff
+    position: fixed
+    width: 100%
+    height: 1000vh
+    
+
+.scroll-mask
+  position: absolute
+  transition: 1s
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+  z-index: -1
+
+.color1
+  background: #FFFFFF
+.color2
+  background: #FFFCF7
+.color3
+  background: #FFF7F7
+.color4
+  background: #FCFFFB
+.color6
+  background: #FBFBFB
+
+.container
+  max-width: 942px
+  margin: 0 auto
+  &-header
+    width: 1817px
+    height: 100%
+    margin: 0 auto
+    position: absolute
+  &-nav
+    max-width: 938px
+    margin: 0 auto
+  &-content
+    position: relative
+
+
+.line
+  z-index: -1
+  position: absolute
+  bottom: 0
+  left: 290px
+  width: 339px
+  height: 1639.5px
+  transform: translateY(100%)
+  background: url(../img/line.svg)
+
+
+.apps-mobile
+  display: none
+
+.add
+  color: #2C2C2C
+  position: relative
+  font-size: 17px
+  line-height: 21px
+  &:after
+    position: absolute
+    content: ''
+    width: 100%
+    height: 1px
+    background: #2C2C2C
+    bottom: -3px
+    left: 0
+  &-mobile
+    display: none
+
+.navbar
+  margin-bottom: -61px
+  background: #ffffff
+  padding: 4px 0
+  &-mobile
+    display: none
+  &-block
+    display: flex
+    align-items: center
+  &-logo
+    width: 46px
+    height: 46px
+    background: url(../img/logo.png)
+    background-size: contain
+    background-repeat: no-repeat
+  &-afterlogo
+    display: none
+  &-list
+    padding-left: 32px
+    display: flex
+    &__item
+      margin-right: -9px
+      display: block
+      background: #FFFFFF
+      border-radius: 23px
+      padding: 6px 34px 6px 34px
+    &__anchor
+      text-decoration: none
+      font-size: 17px
+      color: #2C2C2C
+      text-align: center
+      +reg
+  &-contacts
+    z-index: 2
+    text-align: right
+    margin-left: auto
+  &-phone
+    display: block
+    line-height: 17px
+    font-size: 15px
+    color: #2C2C2C
+    +reg
+    text-decoration: none
+    cursor: pointer
+    &__text
+      line-height: 16px
+      +reg
+      font-size: 14px
+
+      color: #2C2C2C
+
+.nav-active
+  background: #FDCD65
+  z-index: 2
+
+.button
+  margin-right: 18px
+  width: 333px
+  text-align: center
+  height: 61px
+  line-height: 55px
+  +reg
+  text-decoration: none
+  position: relative
+  display: inline-block
+  border-radius: 57px
+  font-size: 21px
+  color: #2c2c2c
+  background:#CB884D
+  z-index: 99
+  &:before
+    left: 0
+    bottom: 4px
+    content: ''
+    position: absolute
+    display: inline-block
+    border-radius: 57px
+    font-size: 18px
+    color: #2c2c2c
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, #FFCE6F 0.28%, #FBC161 100%)
+    z-index: -1
+  &:after
+    left: 0;
+    bottom: 1px
+    content: ''
+    position: absolute
+    display: inline-block
+    border-radius: 57px
+    font-size: 18px
+    color: #2c2c2c
+    width: 100%
+    height: 100%
+    background: #EEB274
+    z-index: -2
+  &:hover
+    &:before
+      background: linear-gradient(0deg, #FFDB96 0.28%, #FBD28F 100%)
+
+
+
+.header
+  overflow: hidden
+  position: relative
+  width: 100%
+  height: 872px
+  margin: 0 auto
+  display: flex
+  justify-content: center
+  align-items: center
+  // &-cross
+  //   position: absolute
+  //   top: 0
+  //   left: 0
+  //   width: 100%
+  //   height: 100%
+  //   background: url(../img/cross_bg.png)
+  //   z-index: 0
+  &-mask
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100.18%
+    background: url(../img/bg.jpg) no-repeat top center
+    background-size: cover
+    z-index: -1
+    opacity: 0.8
+  &-arm
+    pointer-events: none
+    position: absolute
+    right: 0
+    bottom: -3px
+    width: 829px
+    height: 714px
+    background: url(../img/arm.png) no-repeat center top
+    background-size: contain
+  &-shadow
+    position: absolute
+    top: 18%
+    left: -16%
+    width: 100%
+    height: 100%
+    background: url(../img/shadow.png) no-repeat center top
+    z-index: -1
+    &-mobile
+      display: none
+
+
+.hero
+  z-index: 99999999999999
+  max-width: 912px
+  margin-top: 202px
+  margin-left: 436px
+  &-title
+    margin: 0
+    margin-bottom: 17px
+    font-size: 44px
+    color: #000000
+    +reg
+  &-subtitle
+    margin: 0
+    margin-bottom: 67px
+    max-width: 270px
+    +reg
+    font-size: 22px
+    color: #060606
+    line-height: 25px
+  &-text
+    color: #060606
+    font-size: 15px
+    max-width: 475px
+    +reg
+    &__first
+      margin-bottom: 18px
+    &__block
+      margin-bottom: 99px
+      &-mask
+        display: none
+  &-app
+    width: 150px
+    display: block
+    height: 43px
+    background-size: contain
+  &-apps
+    display: flex
+  &-bot
+    display: flex
+    align-items: center
+  &-add
+    width: 335px
+    margin-top: 22px
+    &__text
+      margin: 0 auto
+      +roboto
+      font-size: 13px
+      line-height: 15px
+      text-align: center
+      max-width: 200px
+.apple
+  transition: .2s
+  background: url(../img/apple.svg) no-repeat center top
+  margin-right: 16px
+  &:hover
+    transform: translateY(-2px)
+  &-bot
+    margin-right: 14px
+    background: url(../img/apple-bot.svg) no-repeat center top
+.google
+  transition: .2s
+  background: url(../img/google.svg) no-repeat center top
+  &:hover
+    transform: translateY(-2px)
+  &-bot
+    background: url(../img/google-bot.svg) no-repeat center top
+
+
+
+.video
+  position: absolute
+  bottom: 0
+  right: 0
+  object-fit: cover
+  width: 100%
+  width: 114%
+  height: 100%
+  z-index: -1
+
+
+
+.advan
+  width: 100%
+  position: relative
+  padding-top: 101px
+  padding-bottom: 101px
+  &-title
+    margin-bottom: 14px
+    font-size: 30px
+    line-height: 34px
+  &-subtitle
+    font-size: 17px
+    line-height: 19px
+    margin-bottom: 98px
+  &-block
+    max-width: 932px
+    margin-bottom: 24px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+      display: flex
+      align-items: center
+      margin-bottom: 26px
+    &__text
+      max-width: 191px
+      font-size: 15px
+      line-height: 17px
+      padding-top: 22px
+    &__image
+      width: 68px
+      height: 68px
+      margin-right: 9px
+      &__img1
+        background: url(../img/advan-1.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &__img2
+        background: url(../img/advan-2.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &__img3
+        background: url(../img/advan-3.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &__img4
+        background: url(../img/advan-4.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &__img5
+        background: url(../img/advan-5.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &__img6
+        background: url(../img/advan-6.svg)
+        background-repeat: no-repeat
+        background-size: contain
+
+
+
+.package
+  padding-top: 81px
+  padding-bottom: 89px
+  &-title
+    font-size: 30px
+    line-height: 34px
+    margin-bottom: 9px
+  &-subtitle
+    margin-bottom: 114px
+    font-size: 17px
+    line-height: 19px
+    max-width: 335px
+  &-block
+    margin-left: 482px
+    &__title
+      margin-bottom: 6px
+      font-size: 30px
+      line-height: 34px
+    &__subtitle
+      font-size: 17px
+      line-height: 19px
+      max-width: 390px
+      display: inline-block
+  &-flex
+    margin-top: -29px
+    max-width: 810px
+    justify-content: space-between
+    max-height: 270px
+    align-items: center
+    display: flex
+    &__image
+    &__block
+      margin-bottom: 44px
+      padding-top: 52px
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      min-width: 333px
+    &__item
+      max-width: 120px
+  &-item
+    &__icon
+      width: 60px
+      height: 60px
+      margin: 0 auto
+      margin-bottom: 15px
+      &-icon11
+        background: url(../img/icon-11.svg)
+        margin-left: 19px
+        background-repeat: no-repeat
+        background-size: contain
+      &-icon12
+        background: url(../img/icon-12.svg)
+        margin-left: 37px
+        background-repeat: no-repeat
+        background-size: contain
+      &-icon13
+        background: url(../img/icon-13.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &-icon21
+        margin-left: 19px
+        background: url(../img/icon-21.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &-icon22
+        margin-left: 7px
+        background: url(../img/icon-22.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &-icon23
+        margin-left: 12px
+        background: url(../img/icon-23.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &-icon31
+        margin-left: 20px
+        background: url(../img/icon-31.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &-icon32
+        margin-left: 26px
+        background: url(../img/icon-32.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &-icon33
+        margin-left: 11px
+        background: url(../img/icon-33.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &-icon41
+        margin-left: 12px
+        background: url(../img/icon-41.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &-icon42
+        margin-left: 22px
+        background: url(../img/icon-42.svg)
+        background-repeat: no-repeat
+        background-size: contain
+      &-icon43
+        margin-left: 11px
+        background: url(../img/icon-43.svg)
+        background-repeat: no-repeat
+        background-size: contain
+    &__text
+      text-align: center
+
+
+
+.package2
+  padding-top: 150px
+  .package-flex
+    margin-left: 142px
+    flex-direction: row-reverse
+    &__text
+      text-align: right
+  .package-block
+    margin-left: 0
+    margin-right: 474px
+    text-align: right
+  .package-block__subtitle
+    max-width: 292px
+
+
+.package3
+  padding-top: 140px
+  .package
+    &-flex
+      &__image
+        margin-left: 0
+  .package-block__subtitle
+    max-width: 100%
+
+.package4
+  padding-top: 148px
+  padding-bottom: 210px
+  .package-flex
+    margin-left: 119px
+  .package-block
+    margin-right: 478px
+  .package-block__subtitle
+    max-width: 310px
+
+.frame
+  width: 100%
+  height: 1072px
+
+
+.footer
+  padding-top: 33px
+  padding-bottom: 24px
+  color: #FFFFFF
+  background: #2C2C2C
+  &-top
+    margin-bottom: 22px
+    display: flex
+    align-items: center
+    &__second
+      margin-left: 60px
+      margin-top: 36px
+    &__third
+      margin-left: auto
+      &-text
+        +roboto
+        font-size: 13px
+        line-height: 18px
+  &-title
+    margin-bottom: 15px
+    font-size: 17px
+    line-height: 21px
+  &-subtitle
+    margin-bottom: 5px
+    +roboto
+    font-size: 13px
+    line-height: 18px
+  &-phone
+    +roboto
+    font-size: 19px
+    line-height: 27px
+    color: #FFFFFF
+    text-decoration: none
+  &-bot
+    &__text
+      +roboto
+      font-size: 13px
+      line-height: 18px
+  .hero-apps
+    margin-bottom: 24px
+
+@media screen and (max-width: 1600px)
+  .header
+    &-arm
+      right: -123px
+
+
+@media screen and (max-width: 1440px)
+  .header
+    &-arm
+      right: -189px
+
+
+
+@media screen and (max-width: 800px)
+
+
+  .bar
+    display: none
+
+
+  .navbar
+    padding-top: 5px
+    &-mobile
+      position: relative
+      background: #6A6A6A
+      border-radius: 10px
+      width: 16px
+      height: 2px
+      display: block
+      z-index: 99999999
+      margin-left: auto
+      transition: .3s
+      &:before
+        transition: .3s
+        background: #6A6A6A
+        border-radius: 10px
+        display: block
+        position: absolute
+        content: ''
+        width: 16px
+        height: 2px
+        top: 5px
+        left: 0
+      &:after
+        transition: .3s
+        background: #6A6A6A
+        border-radius: 10px
+        display: block
+        position: absolute
+        content: ''
+        width: 16px
+        height: 2px
+        top: -5px
+        left: 0
+      &_active
+        height: 0
+        &:before
+          transform: rotate(45deg)
+          top: 0
+        &:after
+          transform: rotate(-45deg)
+          top: 0
+    &-navigation
+      transition: .3s
+      position: absolute
+      z-index: 99
+      background: #ffffff
+      width: 90%
+      height: 100vh
+      top: 0
+      right: -100%
+      &_active
+        right: 0
+    &-contacts
+      display: none
+    &-logo
+      width: 30px
+      height: 30px
+    &-afterlogo
+      display: inline-block
+      font-size: 14.9552px
+      line-height: 17px
+      margin-left: 11px
+    &-list
+      margin-bottom: 9px
+      flex-direction: column
+      padding-left: 0
+      max-width: 200px
+      display: block
+      margin-left: 23px
+      margin-top: 51px
+      &__anchor
+        display: inline-block
+        font-size: 19px
+        line-height: 21px
+      &__item
+        display: inline-block
+        padding: 7px 14px
+        margin-bottom: 14px
+    .footer
+      &-title
+        font-size: 15px
+        line-height: 17px
+        color: #9B9B9B
+      &-subtitle
+        margin-bottom: 4px
+        font-size: 11px
+        line-height: 13px
+        color: #9B9B9B
+      &-phone
+        color: #2C2C2C
+        font-size: 17px
+        line-height: 20px
+      &-top
+        &__first
+          margin-left: 38px
+        &__second
+          margin-left: 38px
+        &__third
+          margin-left: 38px
+          margin-top: 26px
+    .apps-mobile
+      flex-direction: column
+      .apple
+        width: 143px
+        height: 43px
+        background-size: 100%
+        margin-bottom: 16px
+      .google
+        width: 143px
+        height: 43px
+        background-size: 100%
+        margin-left: 0
+    &-line
+      background: #E8E8E8
+      height: 1px
+      width: 90%
+      margin-bottom: 38px
+
+
+
+  .container
+    max-width: 295px
+    &-header
+      max-width: 88%
+      position: relative
+    &-nav
+      max-width: 88%
+
+
+  .line
+    display: none
+
+  .apps-mobile
+    display: flex
+    margin-bottom: 50px
+
+  .video
+    height: 412px
+
+  .fullpage
+    height: auto
+    position: static
+    &-scroll
+      position: static
+      height: auto
+
+  .header
+    height: 429px
+    overflow: visible
+    &-arm
+      left: 46px
+      bottom: -265px
+      width: 546px
+      height: 575px
+    &-shadow
+      display: none
+      &-mobile
+        display: block
+        height: 240px
+        top: 70px
+    &-cross
+      height: 412px
+    &-mask
+      height: 412.3px
+
+
+
+  .scroll
+    &-mask
+      height: auto
+      overflow: hidden
+
+
+  .hero
+    margin-top: 85px
+    margin-left: 0
+    &-add
+      width: auto
+      font-size: 12px
+      line-height: 14px
+      color: #767676
+      margin-top: 20px
+    &-title
+      max-width: 180px
+      font-size: 27px
+      line-height: 31px
+      margin-bottom: 294px
+    &-subtitle
+      line-height: 25px
+      max-width: 240px
+      color: #000000
+      margin-bottom: 20px
+    &-bot
+      flex-direction: column
+    &-apps
+      display: none
+    &-app
+      width: 136.71px
+      height: 39.2px
+      background-size: contain
+    &-text
+      max-width: 249px
+      margin-bottom: 0
+      line-height: 17px
+      color: #000000
+      &__block
+        transition: all .5s
+        position: relative
+        overflow: hidden
+        height: 52px
+        margin-bottom: 10px
+        &-active
+          transition: .5s
+          height: 100px
+        &-mask
+          transition: .5s
+          display: block
+          position: absolute
+          width: 100%
+          height: 100%
+          left: 0
+          bottom: 0
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, #FFFFFF 100%)
+          &__active
+            height: 0
+
+
+
+
+  .add-mobile
+    margin-bottom: 50px
+    display: inline-block
+    &:after
+      bottom: -1px
+
+
+  .apple
+    margin-right: 0
+  .google
+    margin-left: auto
+
+  .advan
+    transition: 0.5s
+    margin-top: 510px
+    padding-top: 0
+    padding-bottom: 56.5px
+    &-active
+      margin-top: 558px
+    &-title
+      max-width: 215px
+    &-subtitle
+      max-width: 180px
+      margin-bottom: 27px
+    &-block
+      margin-bottom: 15px
+      &__text
+        padding-top: 14px
+    .container
+      max-width: 88%
+
+
+  .package
+    &-block
+      margin-left: 0
+      margin-bottom: 74px
+      &__subtitle
+        max-width: 287px
+    &-flex
+      &__block
+        min-width: 0
+        flex-direction: column
+        margin: 0
+        padding: 0
+        padding-top: 27px
+        height: 310px
+      &__image
+        margin: 0
+      &__img
+        max-width: 277px
+        margin-left: -80px
+      &__add
+        left: -192px
+        text-decoration: none
+        bottom: -65px
+    &-subtitle
+      margin-bottom: 91px
+    &-block
+      &__title
+        font-size: 24px
+        line-height: 27px
+        margin-bottom: 2px
+      &__subtitle
+        font-size: 15px
+        line-height: 17px
+    &-item
+      &__icon
+        width: 49.12px
+        height: 46.42px
+        margin-bottom: 9px
+        &-icon11
+          margin-left: 28px
+        &-icon12
+          margin-left: 34px
+      &__text
+        font-size: 14px
+        line-height: 16px
+    &-item
+      &__icon
+        &-icon21
+          margin-left: 22px
+        &-icon22
+          margin-left: 16px
+        &-icon23
+          margin-left: 20px
+        &-icon31
+          margin-left: 28px
+        &-icon32
+        &-icon33
+          margin-left: 26px
+        &-icon41
+          margin-left: 21px
+        &-icon42
+          margin-left: 25px
+        &-icon43
+          margin-left: 19px
+
+
+  .package1
+    background: #FFFCF7
+    padding-top: 37px
+    padding-bottom: 168px
+  
+  .package2
+    background: #FFF6F6
+    padding-top: 53px
+    padding-bottom: 180px
+    .package
+      &-block
+        margin-right: 0
+      &-flex
+        margin-left: 0
+        &__add
+          left: 206px
+          text-decoration: none
+          bottom: -65px
+      &-block
+        &__subtitle
+          max-width: 238px
+    .package-flex__img
+      margin-right: -65px
+      margin-left: 0
+
+  .package3
+    background: #FCFFFB
+    padding-top: 47px
+    padding-bottom: 160px
+  .package4
+    background: #FFFCF6
+    .package-block__subtitle
+      max-width: 270px
+
+  .frame
+    background: #FBFBFB
+    height: 960px
+
+  .footer
+    padding-top: 45px
+    padding-bottom: 47px
+    &-subtitle
+      margin-bottom: 1px
+    &-top
+      align-items: baseline
+      flex-direction: column
+      &__second
+        margin-top: 8px
+        margin-left: 0
+      &__third
+        margin-left: 0
+        margin: 0 auto
+        margin-top: 34px
+        &-text
+          font-size: 12px
+          line-height: 17px
+    &-bot
+      &__text
+        font-size: 12px
+        line-height: 17px
+    .hero-apps
+      display: flex
+      margin-bottom: 11px
+      .hero-app
+        width: 132.5px
+        height: 38px
+    .container
+      max-width: 88%
+
+
+
+
+  .header-mask
+    z-index: 0
+    height: 368.3px
+    bottom: 0
+    top: auto
+  .video
+    z-index: -9999999999
+  .header-cross
+    z-index: 1
+
+  .header-arm
+    z-index: 2
+
+
+
+
+  .mobile
+    display: block
+
+
+
+  .button
+    width: 230px
+    height: 44.71px
+    line-height: 41.71px
+    font-size: 17px
+    margin: 0 auto
+
+
+
+@media screen and (min-width: 360px)
+  .apps-mobile
+    .hero-app
+      width: 156.71px
+      height: 47.2px
+
+
+@media screen and (max-width: 1440px)
+  .bar
+    top: 55%
+
+
+
+@media screen and (max-width: 1366px)
+  .bar
+    top: 56%
+    &-active
+      top: 51%
+    &-step
+      margin-bottom: 4px
+  .dot
+    margin-bottom: 4px
+
+
+
+@media screen and (max-width: 1024px)
+  .header-arm
+    bottom: 52px
+    right: -309px
+    width: 811px
+  .bar
+    right: 31px
+    &-step
+      width: 80px
+      height: 80px
+      &__circle-active
+        width: 80px
+        height: 80px
+      &-step1
+        background-size: 55px
+      &-step2
+        background-size: 55px
+      &-step3
+        background-size: 55px
+      &-step4
+        background-size: 55px
+
+
+
+@media screen and (max-width: 800px)
+  .header-arm
+    left: 46px
+    bottom: -265px
+    width: 546px
+    height: 575px
+
+@media screen and (max-width: 800px) and (orientation: landscape)
+
+
+
+  
+  canvas.video
+    right: 50%
+    margin-right: -50%
+
+
+
+  .header
+    &-arm
+      bottom: -131px
+      width: 410px
+      height: 483px
+      right: 0
+      left: auto
+
+  .footer
+    &-top
+      text-align: center
+      &__first
+        margin: 0 auto
+      &__second
+        margin: 0 auto
+
+  .hero
+    .apps
+      &-mobile
+        max-width: 417px
+        margin: 0 auto
+        margin-bottom: 50px
+
+  .navbar-navigation
+    height: 510px
+    width: 250px
+
+
+@media screen and (min-width: 801px)
+  .header-mask
+    height: 811px
+    bottom: 0
+    top: auto
+    z-index: 0
+
+@media screen and (min-width: 640px) and (max-width: 800px)
+
+  .header
+    &-arm
+      bottom: -131px
+      width: 410px
+      height: 483px
+      right: 0
+      left: auto
+
+
+
+
+@media screen and (min-width: 481px) and (max-width: 639px)
+  .header
+    &-arm
+      bottom: -131px
+      width: 326px
+      height: 410px
+      right: 0
+      left: auto
+    
